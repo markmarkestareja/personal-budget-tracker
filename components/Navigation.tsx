@@ -12,9 +12,11 @@ export default function Navigation() {
     }
 
   return (
-    <div className="px-4 py-5">
-      <div className="flex justify-between">
-        <SidebarMenu />
+    <div className="px-4 py-5 md:hidden">
+      <div className="flex justify-between md:justify-end">
+        <div>
+          <SidebarMenu />
+        </div>
         <svg
           onClick={OpenAddBtn}
           className={`cursor-pointer transition-transform duration-300 ${rotate ? "rotate-45" : "rotate-0"} ease-[cubic-bezier(0.35,1.56,0.64,1)]`}
