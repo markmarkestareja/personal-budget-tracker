@@ -1,11 +1,9 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { DrawerClose } from "@/components/ui/drawer";
 import BtnSidebar from "../BtnSidebar";
 
 export default function SidebarTab() {
-  const router = useRouter();
   return (
     <div className="px-6 flex flex-col justify-start items-start gap-4 pt-6">
       <DrawerClose asChild>

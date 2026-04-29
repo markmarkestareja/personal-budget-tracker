@@ -5,6 +5,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import SidebarDesktop from "@/components/Sidebar/SidebarDesktop";
 import BtnAdd from "@/components/BtnAdd";
+import RenderCurrentDate from "@/components/RenderCurrentDate";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,6 +54,7 @@ export default function RootLayout({
             <div className="flex justify-between w-full">
               <div>
                 <h1 className="text-3xl md:text-4xl">Welcome back, John!</h1>
+                <p className="text-dark/75">Today is <RenderCurrentDate />.</p>
               </div>
               <div className="hidden md:block">
                 <BtnAdd />

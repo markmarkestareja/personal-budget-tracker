@@ -16,7 +16,7 @@ export default function BtnSidebar({ name, href, icon }: BtnSidebarProps) {
   return (
     <div className="w-full">
       <button
-        className={`flex items-center gap-2 p-4 w-full rounded-[8px] transition
+        className={`flex items-center gap-2 p-3 w-full rounded-[8px] transition text-sm
             ${isActive
                 ? "bg-primary-muted text-primary"
                 : "hover:text-dark/50"
@@ -24,7 +24,7 @@ export default function BtnSidebar({ name, href, icon }: BtnSidebarProps) {
             `}
         onClick={() => router.push(`${href}`)}
       >
-        {icon && <span className="text-xl">{icon}</span>}
+        {icon && <span className="text-sm">{icon}</span>}
         {name}
       </button>
     </div>

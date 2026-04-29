@@ -1,12 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
 import BtnSidebar from "../BtnSidebar";
 
 export default function SidebarDesktop() {
-  const router = useRouter();
-  const pathname = usePathname();
 
   return (
     <div className="h-lvh sticky flex flex-col justify-between">
