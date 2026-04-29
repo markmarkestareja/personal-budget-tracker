@@ -49,12 +49,14 @@ export default function RootLayout({
             </div>
           </aside>
 
-          <main className="border flex-1 relative">
+          <main className="border flex-1 relative p-4 md:p-5 lg:p-9">
             <div className="flex justify-between w-full">
               <div>
-                Hi
+                <h1 className="text-3xl md:text-4xl">Welcome back, John!</h1>
               </div>
-              <BtnAdd />
+              <div className="hidden md:block">
+                <BtnAdd />
+              </div>
             </div>
             {children}
           </main>
