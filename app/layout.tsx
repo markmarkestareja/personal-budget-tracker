@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navigation from "@/components/Navigation";
 import SidebarDesktop from "@/components/Sidebar/SidebarDesktop";
+import BtnAdd from "@/components/BtnAdd";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,12 @@ export default function RootLayout({
           </aside>
 
           <main className="border flex-1 relative">
+            <div className="flex justify-between w-full">
+              <div>
+                Hi
+              </div>
+              <BtnAdd />
+            </div>
             {children}
           </main>
         </div>
