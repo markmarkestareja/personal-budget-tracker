@@ -39,7 +39,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <header>
+        <header className="relative z-10">
           <Navigation />
         </header>
 
@@ -50,7 +50,7 @@ export default function RootLayout({
             </div>
           </aside>
 
-          <main className="flex-1 relative p-4 md:p-5 lg:p-9 flex flex-col gap-3 lg:gap-5">
+          <main className="flex-1 relative z-0 p-4 md:p-5 lg:p-9 flex flex-col gap-3 lg:gap-5">
             <div className="flex justify-between w-full">
               <div className="flex flex-col gap-1 md:gap-3">
                 <h1 className="text-3xl md:text-4xl">Welcome back, John!</h1>

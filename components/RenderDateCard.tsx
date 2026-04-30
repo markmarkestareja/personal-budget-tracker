@@ -37,7 +37,7 @@ export default function RenderDateCard() {
         >
           <path
             fill="none"
-            stroke="currentColor"
+            stroke="var(--primary)"
             d="M7.5 6V1m10 5V1m4 16v4.5h-18v-3m17.863-10H3.352M.5 18.25v.25h17.9l.15-.25l.234-.491A28 28 0 0 0 21.5 5.729V3.5h-18v2.128A28 28 0 0 1 .743 17.744z"
             strokeWidth="1.5"
           />
@@ -56,7 +56,7 @@ export default function RenderDateCard() {
         >
           <g
             fill="none"
-            stroke="currentColor"
+            stroke="var(--primary)"
             strokeLinecap="round"
             strokeWidth="1.5"
           >
@@ -78,7 +78,7 @@ export default function RenderDateCard() {
         >
           <path
             fill="none"
-            stroke="currentColor"
+            stroke="var(--primary)"
             d="M7.5 6V1m10 5V1m4 16v4.5h-18v-3m17.863-10H3.352M.5 18.25v.25h17.9l.15-.25l.234-.491A28 28 0 0 0 21.5 5.729V3.5h-18v2.128A28 28 0 0 1 .743 17.744z"
             strokeWidth="1.5"
           />
@@ -91,14 +91,14 @@ export default function RenderDateCard() {
     <div className="flex gap-2 md:gap-5">
       {dateCardData.map((item, index) => (
         <Card key={index} className="w-full bg-light-2 ring-1 ring-light-3">
-          <div className="flex flex-col lg:flex-row gap-3 md:gap-0">
+          <div className="flex flex-col lg:flex-row gap-3 lg:gap-0 w-full">
             <div className="flex items-center pl-4">
               {/* SVG */}
               {item.svg}
             </div>
-            <div className="">
+            <div className="w-full flex flex-col gap-1">
               <CardHeader>
-                <CardTitle className="text-[8px] md:text-[10px] lg:text-[12px]">
+                <CardTitle className="text-[8px] md:text-[10px] lg:text-[12px] w-full text-dark/75">
                   {item.title}
                 </CardTitle>
               </CardHeader>
