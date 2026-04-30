@@ -44,17 +44,17 @@ export default function RootLayout({
         </header>
 
         <div className="flex">
-          <aside className="hidden md:block border min-w-32 max-w-56 flex-1">
+          <aside className="hidden md:block min-w-32 max-w-56 flex-1">
             <div>
               <SidebarDesktop />
             </div>
           </aside>
 
-          <main className="border flex-1 relative p-4 md:p-5 lg:p-9 flex flex-col gap-3 lg:gap-5">
+          <main className="flex-1 relative p-4 md:p-5 lg:p-9 flex flex-col gap-3 lg:gap-5">
             <div className="flex justify-between w-full">
               <div className="flex flex-col gap-1 md:gap-3">
                 <h1 className="text-3xl md:text-4xl">Welcome back, John!</h1>
-                <p className="text-dark/75">Today is <RenderCurrentDate />.</p>
+                <p className="text-dark/75 text-[12px]">Today is <RenderCurrentDate />.</p>
               </div>
               <div className="hidden md:block">
                 <BtnAdd />

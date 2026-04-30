@@ -13,7 +13,8 @@ export default function BtnAdd() {
     <>
       <svg
         onClick={OpenAddBtn}
-        className={`cursor-pointer transition-transform duration-300 ${rotate ? "rotate-45" : "rotate-0"} ease-[cubic-bezier(0.35,1.56,0.64,1)]`}
+        className={`cursor-pointer transition-transform duration-300 ${rotate ? "rotate-45" : "rotate-0"} ease-[cubic-bezier(0.35,1.56,0.64,1)]
+                    relative z-index-100`}
         xmlns="http://www.w3.org/2000/svg"
         width="50"
         height="50"
