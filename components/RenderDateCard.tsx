@@ -88,7 +88,7 @@ export default function RenderDateCard() {
   ];
 
   return (
-    <div className="flex gap-2 md:gap-5">
+    <div className="flex gap-2.5 md:gap-5">
       {dateCardData.map((item, index) => (
         <Card key={index} className="w-full bg-light-2 ring-1 ring-light-3">
           <div className="flex flex-col lg:flex-row gap-3 lg:gap-0 w-full">
