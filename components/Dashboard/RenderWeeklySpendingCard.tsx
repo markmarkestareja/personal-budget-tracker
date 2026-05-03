@@ -38,7 +38,7 @@ export default function RenderWeeklySpendingCard() {
             >
               <g
                 fill="none"
-                stroke="currentColor"
+                stroke="var(--primary)"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="1.5"

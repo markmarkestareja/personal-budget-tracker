@@ -22,10 +22,10 @@ export default function DatePickerDemo() {
         <Button
           variant="outline"
           data-empty={!date}
-          className="w-70 p-4 justify-start text-left font-normal data-[empty=true]:text-muted-foreground"
+          className="w-auto p-4 justify-start text-left font-normal data-[empty=true]:text-muted-foreground"
         >
           <CalendarIcon />
-          {date ? format(date, "PPP") : <span>Pick a date</span>}
+          {date ? format(date, "PPP") : <span>Apr 16 - April 30, 2026</span>}
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0">
