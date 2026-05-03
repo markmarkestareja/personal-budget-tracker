@@ -3,7 +3,7 @@ import React from "react";
 
 export default function RenderRemainingCard() {
   return (
-    <Card className="w-full h-full flex-col md:flex-row lg:flex-col justify-around items-center">
+    <Card className="w-full h-full flex-col md:flex-row lg:flex-col justify-around items-center ring-light-3">
       <CardHeader className="w-full">
         <CardTitle className="w-full text-center flex flex-col md:flex-row lg:flex-col items-center gap-2 md:gap-4 text-[12px] md:text-sm lg:text-base">
           <div className="bg-primary-muted p-2 rounded-full">
@@ -15,7 +15,7 @@ export default function RenderRemainingCard() {
             >
               <g
                 fill="none"
-                stroke="currentColor"
+                stroke="var(--primary)"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="1.5"
