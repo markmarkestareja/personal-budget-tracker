@@ -43,9 +43,9 @@ export default function RootLayout({
           <Navigation />
         </header>
 
-        <div className="flex">
-          <aside className="hidden md:block min-w-32 max-w-56 flex-1">
-            <div>
+        <div className="flex relative">
+          <aside className="hidden md:block w-56 sticky top-0 self-start">
+            <div className="relative">
               <SidebarDesktop />
             </div>
           </aside>

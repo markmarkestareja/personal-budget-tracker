@@ -6,7 +6,7 @@ import BtnSidebar from "../BtnSidebar";
 export default function SidebarDesktop() {
 
   return (
-    <div className="h-lvh sticky flex flex-col justify-between pt-8 border-r">
+    <div className="h-lvh flex flex-col justify-between pt-8 border-r">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col justify-center items-center gap-3">
           <div className="flex flex-col items-center">
