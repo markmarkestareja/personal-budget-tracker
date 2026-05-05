@@ -119,10 +119,10 @@ export default function WeeklySpendingTable() {
       <TableBody>
         {expenses.map((expense, index) => (
           <TableRow key={index}>
-            <TableCell className="flex gap-2 p-4 items-center"><span className="bg-primary-muted p-2 rounded-full">{expense.svg}</span>{expense.description}</TableCell>
-            <TableCell className="p-4">₱ {expense.spent.toLocaleString("en-PH", {minimumFractionDigits: 2})}</TableCell>
-            <TableCell className="p-4">₱ {expense.budget.toLocaleString("en-PH", {minimumFractionDigits: 2})}</TableCell>
-            <TableCell className="p-4">₱ {(expense.budget - expense.spent).toLocaleString("en-PH", {minimumFractionDigits: 2})}</TableCell>
+            <TableCell className="flex gap-2 p-4 pl-0 items-center"><span className="bg-primary-muted p-2 rounded-full">{expense.svg}</span>{expense.description}</TableCell>
+            <TableCell className="p-4 pl-0 ">₱ {expense.spent.toLocaleString("en-PH", {minimumFractionDigits: 2})}</TableCell>
+            <TableCell className="p-4 pl-0 ">₱ {expense.budget.toLocaleString("en-PH", {minimumFractionDigits: 2})}</TableCell>
+            <TableCell className="p-4 pl-0 ">₱ {(expense.budget - expense.spent).toLocaleString("en-PH", {minimumFractionDigits: 2})}</TableCell>
           </TableRow>
         ))}
       </TableBody>

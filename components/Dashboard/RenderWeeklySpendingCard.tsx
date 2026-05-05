@@ -1,12 +1,14 @@
-import React from "react";
+"use client"
+
 import WeeklySpendingTable from "./RenderWeeklySpending/WeeklySpendingTable";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import DatePicker from "./RenderWeeklySpending/DatePicker";
+import WeeklySpendingBarChart from "./RenderWeeklySpending/WeeklySpendingBarChart";
 
 export default function RenderWeeklySpendingCard() {
   return (
     <div>
-      <Card className="ring-light-3">
+      <Card className="ring-light-3 flex flex-col gap-8">
         <CardHeader className="flex justify-between">
           <CardTitle className="flex gap-4 items-center text-[22px] text-2xl">
             THIS WEEKS SPENDING{" "}
@@ -49,8 +51,10 @@ export default function RenderWeeklySpendingCard() {
             </svg>
           </button>
         </CardHeader>
-        <CardContent>
+        <CardContent className="flex flex-col lg:flex-row gap-4">
           <WeeklySpendingTable />
+          <span className="hidden lg:block w-1 bg-light-3 self-stretch "></span>
+          <WeeklySpendingBarChart />
         </CardContent>
       </Card>
     </div>
