@@ -32,7 +32,7 @@ export default function BarChartCard() {
   return (
     <Card className="w-full max-w-3xl ring-0">
 
-      <CardContent className="h-[350px]">
+      <CardContent className="h-87.5">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={data}
@@ -46,13 +46,13 @@ export default function BarChartCard() {
             <Legend />
             <Bar
               dataKey="spent"
-              fill="var(--primary)"
+              fill="var(--primary-muted-2)"
               barSize={8}
               radius={[6, 6, 6, 6]}
             />
             <Bar
               dataKey="budget"
-              fill="var(--primary-muted)"
+              fill="var(--primary)"
               barSize={8}
               radius={[6, 6, 6, 6]}
             />
